@@ -45,6 +45,8 @@ class FuelioCoordinator(DataUpdateCoordinator):
         self._session = async_get_clientsession(hass)
         self._access_token: str | None = None
         self._token_expiry: datetime | None = None
+        # Controllato dallo switch "Notifiche aggiornamento"
+        self.notifications_enabled: bool = True
 
     async def _async_get_access_token(self) -> str:
         if self._access_token and self._token_expiry and datetime.utcnow() < self._token_expiry:

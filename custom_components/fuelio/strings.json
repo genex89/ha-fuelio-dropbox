@@ -27,5 +27,12 @@
     "abort": {
       "already_configured": "Questa integrazione Fuelio e' gia' configurata"
     }
+  },
+  "entity": {
+    "switch": {
+      "notify_toggle": {
+        "name": "Notifiche aggiornamento"
+      }
+    }
   }
 }

@@ -52,6 +52,9 @@ class FuelioRefreshButton(CoordinatorEntity[FuelioCoordinator], ButtonEntity):
         else:
             message = f"Aggiornamento fallito: {self.coordinator.last_exception}"
 
+        if not self.coordinator.notifications_enabled:
+            return
+
         await self.hass.services.async_call(
             "persistent_notification",
             "create",

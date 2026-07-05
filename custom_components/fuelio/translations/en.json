@@ -27,5 +27,12 @@
     "abort": {
       "already_configured": "This Fuelio integration is already configured"
     }
+  },
+  "entity": {
+    "switch": {
+      "notify_toggle": {
+        "name": "Update notifications"
+      }
+    }
   }
 }
