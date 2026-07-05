@@ -1,0 +1,11 @@
+{
+  "domain": "fuelio",
+  "name": "Fuelio (Dropbox)",
+  "version": "1.0.0",
+  "documentation": "https://www.fuel.io",
+  "issue_tracker": "https://www.fuel.io",
+  "codeowners": [],
+  "requirements": [],
+  "iot_class": "cloud_polling",
+  "config_flow": true
+}

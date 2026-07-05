@@ -1,0 +1,31 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Set up Fuelio (Dropbox)",
+        "data": {
+          "app_key": "Dropbox App Key",
+          "app_secret": "Dropbox App Secret",
+          "device_name": "Device/vehicle name (used as sensor prefix)",
+          "folder": "Fuelio sync folder on Dropbox",
+          "file_name": "Specific file name (leave empty to use the most recently modified .zip)",
+          "scan_interval": "Update interval (minutes)"
+        }
+      },
+      "auth": {
+        "title": "Authorize Dropbox access",
+        "description": "1. Open this link and sign in with the Dropbox account used by Fuelio:\n\n[Authorize Dropbox access]({authorize_url})\n\n2. Click **Allow**.\n3. Copy the code Dropbox shows you and paste it below.",
+        "data": {
+          "code": "Dropbox authorization code"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid or expired authorization code: generate a new one and retry",
+      "cannot_connect": "Unable to connect to Dropbox"
+    },
+    "abort": {
+      "already_configured": "This Fuelio integration is already configured"
+    }
+  }
+}

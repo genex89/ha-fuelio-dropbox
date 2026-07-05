@@ -1,0 +1,31 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configura Fuelio (Dropbox)",
+        "data": {
+          "app_key": "App Key Dropbox",
+          "app_secret": "App Secret Dropbox",
+          "device_name": "Nome dispositivo/veicolo (usato come prefisso dei sensori)",
+          "folder": "Cartella del file di sync Fuelio su Dropbox",
+          "file_name": "Nome file specifico (lascia vuoto per prendere l'ultimo .zip modificato)",
+          "scan_interval": "Intervallo di aggiornamento (minuti)"
+        }
+      },
+      "auth": {
+        "title": "Autorizza l'accesso a Dropbox",
+        "description": "1. Apri questo link e accedi con l'account Dropbox usato da Fuelio:\n\n[Autorizza l'accesso a Dropbox]({authorize_url})\n\n2. Clicca **Consenti**.\n3. Copia il codice che Dropbox ti mostra e incollalo qui sotto.",
+        "data": {
+          "code": "Codice di autorizzazione Dropbox"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Codice di autorizzazione non valido o scaduto: riprova generandone uno nuovo",
+      "cannot_connect": "Impossibile connettersi a Dropbox"
+    },
+    "abort": {
+      "already_configured": "Questa integrazione Fuelio e' gia' configurata"
+    }
+  }
+}
