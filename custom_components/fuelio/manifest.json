@@ -2,9 +2,9 @@
   "domain": "fuelio",
   "name": "Fuelio (Dropbox)",
   "version": "1.0.0",
-  "documentation": "https://www.fuel.io",
-  "issue_tracker": "https://www.fuel.io",
-  "codeowners": [],
+  "documentation": "https://github.com/genex89/ha-fuelio-dropbox",
+  "issue_tracker": "https://github.com/genex89/ha-fuelio-dropbox/issues",
+  "codeowners": ["@genex89"],
   "requirements": [],
   "iot_class": "cloud_polling",
   "config_flow": true

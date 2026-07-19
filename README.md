@@ -97,6 +97,7 @@ nella `GUIDA_installazione.md` allegata):
 | `sensor.captur_costo_rifornimenti_anno_precedente` | Spesa nell'anno precedente |
 | `sensor.captur_andamento_costi_mensili_12_mesi` | Storico costi mensili (attributo `history`), per grafico |
 | `sensor.captur_andamento_prezzo_al_litro_mensile_12_mesi` | Storico prezzo/litro mensile (attributo `history`), per grafico |
+| `sensor.captur_ultimo_aggiornamento_dati` | Quando i dati sono stati scaricati/ricalcolati l'ultima volta (formato leggibile, es. "5 minuti fa") |
 | `button.captur_aggiorna_dati` | Forza il refresh immediato, con notifica di esito |
 
 ## Pulsante di aggiornamento forzato
