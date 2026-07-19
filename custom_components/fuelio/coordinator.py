@@ -5,7 +5,7 @@ import csv
 import io
 import logging
 import zipfile
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 from homeassistant.core import HomeAssistant
 from homeassistant.config_entries import ConfigEntry
@@ -148,6 +148,7 @@ class FuelioCoordinator(DataUpdateCoordinator):
             raise UpdateFailed("Il backup Fuelio non contiene rifornimenti")
 
         stats = await self.hass.async_add_executor_job(_compute_stats, fillups)
+        stats["last_update_timestamp"] = datetime.now(timezone.utc)
         return {
             "vehicle": vehicle_info,
             "fillups": fillups,

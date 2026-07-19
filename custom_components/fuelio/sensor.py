@@ -27,6 +27,7 @@ SENSOR_DESCRIPTIONS: list[tuple[str, str, str | None, str, SensorDeviceClass | N
     ("previous_month_cost", "Costo rifornimenti mese precedente", "EUR", "mdi:calendar-arrow-left", SensorDeviceClass.MONETARY),
     ("current_year_cost", "Costo rifornimenti anno in corso", "EUR", "mdi:calendar-star", SensorDeviceClass.MONETARY),
     ("previous_year_cost", "Costo rifornimenti anno precedente", "EUR", "mdi:calendar-arrow-left", SensorDeviceClass.MONETARY),
+    ("last_update_timestamp", "Ultimo aggiornamento dati", None, "mdi:clock-check-outline", SensorDeviceClass.TIMESTAMP),
 ]
 
 
