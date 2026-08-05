@@ -136,14 +136,17 @@ class FuelioConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
     @callback
     def async_get_options_flow(config_entry: ConfigEntry) -> "FuelioOptionsFlow":
         """Espone il flusso di opzioni (modificabile dopo l'installazione)."""
-        return FuelioOptionsFlow(config_entry)
+        return FuelioOptionsFlow()
 
 
 class FuelioOptionsFlow(config_entries.OptionsFlow):
-    """Permette di cambiare l'intervallo di aggiornamento senza reinstallare."""
+    """Permette di cambiare l'intervallo di aggiornamento senza reinstallare.
 
-    def __init__(self, config_entry: ConfigEntry) -> None:
-        self.config_entry = config_entry
+    Nota: NON sovrascrivere __init__ per assegnare self.config_entry a mano.
+    Nelle versioni recenti di Home Assistant e' una proprieta' di sola
+    lettura gestita automaticamente dal flow manager; farlo genera un errore
+    che impedisce il caricamento del flusso ("Impossibile caricare il flusso").
+    """
 
     async def async_step_init(self, user_input: dict[str, Any] | None = None) -> FlowResult:
         if user_input is not None:
