@@ -13,7 +13,7 @@ CONF_AUTH_CODE = "code"
 
 DEFAULT_FOLDER = "/Applicazioni/Fuelio/sync"
 DEFAULT_DEVICE_NAME = "Fuelio"
-DEFAULT_SCAN_INTERVAL_MINUTES = 60
+DEFAULT_SCAN_INTERVAL_MINUTES = 1440  # 1 giorno
 
 DROPBOX_AUTHORIZE_URL = "https://www.dropbox.com/oauth2/authorize"
 

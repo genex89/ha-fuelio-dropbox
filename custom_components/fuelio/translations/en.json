@@ -34,5 +34,16 @@
         "name": "Update notifications"
       }
     }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Fuelio options",
+        "description": "Change the update interval without reinstalling the integration.",
+        "data": {
+          "scan_interval": "Update interval (minutes)"
+        }
+      }
+    }
   }
 }

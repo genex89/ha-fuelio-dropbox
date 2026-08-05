@@ -76,6 +76,13 @@ nella `GUIDA_installazione.md` allegata):
 4. Secondo step: apri il link mostrato, autorizza, incolla il codice.
 5. Fatto — compaiono dispositivo e sensori.
 
+### Modificare l'intervallo di aggiornamento in seguito
+
+Non serve rimuovere e reinstallare l'integrazione: **Impostazioni →
+Dispositivi e servizi → Fuelio → Configura** (icona ingranaggio) → cambia il
+valore in minuti → **Invia**. L'integrazione si ricarica automaticamente con
+il nuovo intervallo, senza bisogno di riavviare Home Assistant.
+
 ## Sensori creati
 
 | Entità (esempio con nome dispositivo "Captur") | Descrizione |

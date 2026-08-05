@@ -34,5 +34,16 @@
         "name": "Notifiche aggiornamento"
       }
     }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Opzioni Fuelio",
+        "description": "Modifica l'intervallo di aggiornamento senza reinstallare l'integrazione.",
+        "data": {
+          "scan_interval": "Intervallo di aggiornamento (minuti)"
+        }
+      }
+    }
   }
 }
